@@ -4,6 +4,7 @@
 
 void ATankAIController::BeginPlay()
 {
+	Super::BeginPlay();
 	auto myPawn = GetControlledTank();
 	if (myPawn) {
 		UE_LOG(LogTemp, Warning, TEXT("ATankAIController controlling %s"), *myPawn->GetName());
