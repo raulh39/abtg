@@ -15,7 +15,7 @@ class ABTG_API ATankAIController : public AAIController
 {
 	GENERATED_BODY()
 
-private:
+public:
 	void BeginPlay() override;
 
 	ATank* GetControlledTank() const
